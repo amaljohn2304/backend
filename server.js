@@ -7,7 +7,7 @@ const io = require("socket.io")(server, {
 		origin: "http://localhost:3000",
 		methods: [ "GET", "POST" ]
 	}
-})
+})//v
 
 io.on("connection", (socket) => {
 	socket.emit("me", socket.id)
